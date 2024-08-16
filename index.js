@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-const port = 8000;
+const port = process.env.port || 8000;
 // console.log(dbConfig.db);
 mongoose.Promise = global.Promise;
 
